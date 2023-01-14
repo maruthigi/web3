@@ -1,0 +1,309 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif;
+    font-size: medium;
+}
+.container2{
+    background-color: white;
+    display: grid;
+    grid-template-rows: auto auto;
+    width: 100%;
+}
+#maru{
+    display: none;
+}
+.navbar{
+    display: grid;
+    background-color: rgb(236, 89, 89);
+    grid-template-columns: 30% 60% 10%;
+color: rgb(33, 27, 27);
+box-shadow: 1px 1px ;
+border-radius: 5px;
+height: 40px;
+width: 130%;
+
+align-items: center;
+margin-left: 10px;
+}
+#search{
+    margin-left: 400px;
+    border-radius: 5px;
+    border: none;
+
+}
+.header{
+    background-color: white;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto ;
+    
+    grid-gap: 2px;
+    height: 100px;
+    padding-left: 60px;
+    padding-right: 150px;
+    color: black;
+    width: 100%;
+   
+   
+}
+#second{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    display: none;
+}
+.box{
+    background-color: black;
+    color: white;
+    margin-left: 50px;
+    width: 60%;
+    position: absolute;
+    top: 120%;
+    left: 10%;
+}
+.title4{
+    
+    color: black;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-gap: 20px;
+    width: 100%;
+    height: 200px;
+    
+    
+    
+}
+.card{
+    background-color: blanchedalmond;
+    text-align: center;
+   
+  
+    
+}
+.cards{
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px ;
+    background-color: white;
+    margin: 10px 10px;
+    cursor: pointer;
+    text-align: center;
+    
+
+}
+.child{
+    grid-gap: 1px;
+    box-shadow: 0.5px 0.5px;
+    text-align: center;
+    padding-top: 30px;
+    
+}
+.container{
+    
+
+}
+#title{
+    background-color: rgba(255, 0, 0, 0.735);
+    height: 40px;
+    align-items: center;
+    padding-top: 10px;
+    box-shadow: 1px 1px ;
+    font-family: sans-serif;
+   
+   
+    padding-left: 50px;
+    display: flex;
+    justify-content: space-between;
+   
+
+}
+#akka{
+    font-family:sans-serif;
+    font-size: x-large;
+    font-weight: 900;
+    color: white;
+}
+#buter{
+    margin-right: 150px;
+}
+.form{
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    background-color: aliceblue;
+    text-align: center;
+  
+    height: 200px;
+    border-radius: 5px;
+    box-shadow: 1px 1px ;
+    
+
+   
+   
+}
+#buter{
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px ;
+    background-color: white;
+    width: 100px;
+    font-style: normal;
+    font-weight: 900;
+}
+#user2{
+    
+    box-shadow: 0.5px 0.5px ;
+    height: px;
+    border-radius: 2px;
+}
+#spa{
+    float: right;
+    border-radius: 10px;
+    background-color: white;
+    cursor: pointer;
+    font-weight: 900;
+    position: sticky;
+}
+#submit{
+    margin-left: 200px;
+    
+    box-shadow: 0.5px 0.5px ;
+    background-color: rgba(18, 11, 21, 0.445);
+    border: none;
+    width: 20%;
+    
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+h6{
+    margin: 10px;
+    font-family: sans-serif;
+    font-weight: 500;
+
+}
+h3{
+    font-family: sans-serif;
+    font-weight: 900;
+}
+#user{
+  
+}
+#employee{
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    border-radius: 5px;
+    box-shadow: 1px 1px;
+    width: max-content;
+    height: max-content;
+   
+
+}
+th,td{
+    background-color: rgb(36, 24, 24);
+    font-family: sans-serif;
+    font-size: larger;
+    color: white;
+    padding: 5px;
+    
+}
+#submit1{
+    position: absolute;
+    top: 15%;
+    left:-10 %;
+    background-color: rgb(11, 241, 241);
+    border-radius: 5px;
+    box-shadow: 0.5px 0.5px;
+    border: none;
+    color: rgb(21, 14, 14);
+}
+.container3{
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    width: 50%;
+    background-color: aquamarine;
+}
+
+
+    #container4{
+        display: grid;
+        grid-template-columns: auto ;
+        grid-gap: 5px;
+       
+        background-color: rgb(230, 225, 220);
+     
+        border-radius: 5px;
+        box-shadow: 2px 2px rgb(234, 227, 215);
+      padding-left: 150px;
+  
+    }
+
+label{
+    font-size: medium;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   
+}
+input{
+    display: grid;
+    grid-template-rows: auto;
+    margin-left: 100px;
+    
+   
+}
+.titles{
+    background-color: black;
+    color: aliceblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: larger;
+    padding-left: 50px;
+}
+#add{
+    background-color: rgb(73, 65, 65);
+    color: white;
+}
+#last{
+    display: none;
+    position: absolute;
+    left: 20%;
+    top: 10%;
+    border-radius: 5px;
+    background-color: aliceblue;
+    box-shadow: 2px 2px 2px 2px white;
+}
+.tite{
+    background-color: rgb(49, 34, 34);
+    color: white;
+}
+#arya{
+    display: none;
+}
+#save{
+    border: none;
+    text-decoration: none;
+    text-align: center;
+    background-color: aquamarine;
+    border-radius: 2px;
+    box-shadow: 1px 1px;
+    cursor: pointer;
+    
+}
+
+
+#mar2{
+    float: right;
+    position: absolute;
+    top: 30%;
+    left: 95%;
+}
+#mar1{
+    float: left;
+    position: absolute;
+    top: 30%;
+}
+#arya{
+    display: none;
+}

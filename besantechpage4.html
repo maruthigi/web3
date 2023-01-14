@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="besantech.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container2">
+        <div class="navbar">
+            <div class="title2">Besantechnology</div>
+            <div><input type="text" name="search" id="search" placeholder="please search ..."></div>
+            <div><h3>👤Admin</h3></div>
+        </div>
+        <div class="container3">
+            <div class="tite">EMPLOYEE</div>
+       
+        <form action="" id="container4" onsubmit="submitOn()">
+            
+            
+           
+            <div>
+                <label for="">Name</label>
+                <input type="text" name="name" id="name" placeholder="please enter your name" required>
+            </div>
+            <div>
+                <label for="">Email:</label>
+                <input type="email" name="email" id="email" placeholder="please enter your Email" required>
+            </div>
+            <div>
+                <label for="">City:</label>
+                <input type="text" name="city" id="city" placeholder="please enter your city" required>
+            </div>
+            <div>
+                <label for="">Mobile:</label>
+                <input type="text" name="mobile" id="mobile" placeholder="please enter your Mobile" required>
+            </div>
+            <div>
+                <label for="">Permanent Address:</label>
+                <input type="text" name="address" id="address" placeholder="please enter your Address" required>
+            </div>
+            <div>
+                <label for="">Adhar:</label>
+                <input type="text" name="adhar" id="adhar" placeholder="please enter your Adhar number" required>
+            </div>
+            <div>
+                <label for="">Branch:</label>
+                <input type="text" name="branch" id="branch" placeholder="please enter your branch" required>
+            </div>
+            <div>
+                <label for="">Role:</label>
+                <input type="text" name="role" id="role" placeholder="please enter your role" required>
+            </div>
+            <div>
+           <a href="besantechpage3.html"><input type="text" name="save" id="save" value="SAVE"></a>
+           </div>
+        </form>
+    </div>
+</div>
+       <!---- <table id="employee" >
+            <thead>
+                <tr>
+                    <th>s.no</th>
+                    <th>Eployee Name</th>
+                    <th>City Name</th>
+                    <th>Employee Email</th>
+                    <th>Employee Mobile</th>
+                    <th>Address</th>
+                    <th>Branch</th>
+                    <th>Role</th>
+                    <th>Edit</th>
+                </tr>
+            </thead>
+                <tbody>
+
+                </tbody>
+                <input type="submit" name="submit1" id="submit1" value="Add Employee">
+        
+        </table>
+       
+    </div>---->
+    <script>
+        function my(){
+            let maruthi={}
+            maruthi["name"]=document.getElementById("name").value
+            maruthi["email"]=document.getElementById("email").value
+            maruthi["city"]=document.getElementById("city").value
+            maruthi["mobile"]=document.getElementById("mobile").value
+           
+            maruthi["address"]=document.getElementById("address").value
+            maruthi["adhar"]=document.getElementById("adhar").value
+            maruthi["branch"]=document.getElementById("branch").value
+            maruthi["role"]=document.getElementById("role").value
+            return maruthi
+        }
+        function bye(data){
+          let  table=document. getElementsByTagName("table")[0]
+          let  row=table.insertRow(table.length)
+            cell1=row.insertCell(0)
+            cell1.innerHTML=data.name
+            cell2=row.insertCell(1)
+            cell2.innerHTML=data.email
+            cell3=row.insertCell(2)
+            cell3.innerHTML=data.city
+            cell4=row.insertCell(3)
+            cell4.innerHTML=data.mobile
+            cell5=row.insertCell(4)
+            cell5.innerHTML=data.address
+            cell6=row.insertCell(5)
+            cell6.innerHTML=data.adhar 
+            cell7=row.insertCell(6)
+            cell7.innerHTML=data.branch
+            cell8=row.insertCell(7)
+            cell8.innerHTML=data.role
+            cell9=row.insertCell(8)
+            cell9.innerHTML=`<button onClick="onEdit(this)">edit</button> /<button onClick="onDelete(this)">delete</button>`
+
+
+
+
+        }
+        let supr=null
+        function submitOn(){
+            event.preventDefault()
+            let form=    my()
+            if(supr===null){
+                bye(form)
+            }else{
+                update(form)
+
+            }
+        
+        
+            reset()
+        
+
+        }
+        function reset(){
+            document.getElementById("name").value=""
+            document.getElementById("email").value=""
+            document.getElementById("city").value=""
+            document.getElementById("mobile").value=""
+            document.getElementById("address").value=""
+            document.getElementById("adhar").value=""
+            document.getElementById("branch").value=""
+            document.getElementById("role").value=""
+           
+        }
+        function onEdit(come){
+           let select=come.parentElement.parentElement;
+           document.getElementById("name").value=select.cells[0].name
+            document.getElementById("email").value=select.cells[1].email
+            document.getElementById("city").value=select.cells[2].city
+            document.getElementById("mobile").value=select.cells[3].mobile
+            document.getElementById("address").value=select.cells[4].address
+            document.getElementById("adhar").value=select.cells[5].adhar
+            document.getElementById("branch").value=select.cells[6].branch
+            document.getElementById("role").value=select.cells[7].role
+
+        }
+        function onDelete(go){
+            select=go.parentElement.parentElement;
+            document.getElementById("employee").deleteRow(select.indexRow)
+        }
+        function update(well){
+            select.cell[0].innerHTML=well.name
+            select.cell[1].innerHTML=well.email
+            select.cell[2].innerHTML=well.city
+            select.cell[3].innerHTML=well.mobile
+            select.cell[4].innerHTML=well.address
+            select.cell[5].innerHTML=well.adhar
+            select.cell[6].innerHTML=well.branch
+            select.cell[7].innerHTML=well.role
+
+        }
+    </script>
+</body>
+</html>
